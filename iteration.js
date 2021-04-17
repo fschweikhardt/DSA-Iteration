@@ -48,9 +48,8 @@ function reverseConcat(string) {
 function reverseArray(string) {
     let arr = []
     //split, reverse, join
-    arr = string.split('').reverse().join('')
-    return arr
-    //return 
+    //return arr
+    return arr = string.split('').reverse().join('')
 }
 
-//console.log(reverseArray(string3))
+console.log(reverseArray(string3))
