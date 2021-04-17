@@ -194,13 +194,7 @@ function permut(string) {
     let permutations = []
 
     for (let i = 0; i < string.length; i++) {
-      // Cause we don't want any duplicates:
-    //   if (string.indexOf(string[i]) != i) // if char was used already
-    //     continue; // skip it this time
-  
       let remainingString = string.slice(0, i) + string.slice(i + 1, string.length)
-      //Note: you can concat Strings via '+' in JS
-  
       for (let subPermutation of permut(remainingString))
         permutations.push(string[i] + subPermutation)
     }
@@ -208,4 +202,22 @@ function permut(string) {
     return permutations;
   }
 
-  console.log(permut('abc'))
+  //console.log(permut('abc'))
+
+
+function getAllPermutations(string) {
+    if (string.length <= 1) return string
+
+    let results = []
+
+    for (let i = 0; i < string.length; i++) {
+      let charsLeft = string.slice(0, i) + string.slice(i + 1);
+      let innerPermutations = getAllPermutations(charsLeft)
+      for (let j = 0; j < innerPermutations.length; j++) {
+        results.push(string[i] + innerPermutations[j])
+      }
+    }
+    return results
+  }
+
+  console.log(getAllPermutations('abc'))
