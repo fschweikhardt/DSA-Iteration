@@ -52,4 +52,20 @@ function reverseArray(string) {
     return arr = string.split('').reverse().join('')
 }
 
-console.log(reverseArray(string3))
+//console.log(reverseArray(string3))
+
+'4. nth Triangular Number'
+
+//n = number of sides
+//let dotsTotal = dotsTotal + i - 1
+//return dotsTotal
+
+function triangleNumber(n) {
+    let dotsTotal = n
+    for (let i = n; i > 0; i--) {
+        dotsTotal += i - 1
+    }
+    return dotsTotal
+}
+
+//console.log(triangleNumber(6))
