@@ -69,3 +69,6 @@ function triangleNumber(n) {
 }
 
 //console.log(triangleNumber(6))
+
+'5. String Splitter'
+
