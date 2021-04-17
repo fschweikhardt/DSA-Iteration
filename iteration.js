@@ -158,7 +158,7 @@ function Factorial(num) {
     return total
 }
 
-console.log(Factorial(5))
+//console.log(Factorial(5))
 
 
 '8. Find a way out of the maze'
@@ -179,3 +179,33 @@ let maze = [
 
 
 '10. Anagrams - all permutations of a string' 
+
+function anagram(string) {
+    let arr = []
+    arr = string.split('')
+    for (let i = 0; i < string.length; i++) {
+        
+    }
+}
+
+function permut(string) {
+    if (string.length < 2) return string // This is our break condition
+  
+    let permutations = []
+
+    for (let i = 0; i < string.length; i++) {
+      // Cause we don't want any duplicates:
+    //   if (string.indexOf(string[i]) != i) // if char was used already
+    //     continue; // skip it this time
+  
+      let remainingString = string.slice(0, i) + string.slice(i + 1, string.length)
+      //Note: you can concat Strings via '+' in JS
+  
+      for (let subPermutation of permut(remainingString))
+        permutations.push(string[i] + subPermutation)
+    }
+
+    return permutations;
+  }
+
+  console.log(permut('abc'))
