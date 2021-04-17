@@ -1,5 +1,5 @@
 'DSA Iteration'
-'todos' - 'string splitter, maze, all permutations of anagram'
+'todos - string splitter, maze, all permutations of anagram'
 
 '1. Counting Sheep'
 
