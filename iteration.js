@@ -1,4 +1,5 @@
 'DSA Iteration'
+'todos' - 'string splitter, maze, all permutations of anagram'
 
 '1. Counting Sheep'
 
@@ -220,4 +221,15 @@ function getAllPermutations(string) {
     return results
   }
 
-  console.log(getAllPermutations('abc'))
+  //console.log(getAllPermutations('abc'))
+
+
+  '12. Binary Representation'
+
+  'For example, the program should take 3 as an input and print 11 as output, or 25 as an input and print 11001 as an output. Note that the binary representation of 0 should be 0.'
+
+  function convert(num) {
+      return num.toString(2)
+  }
+
+  console.log(convert(25))
