@@ -232,4 +232,5 @@ function getAllPermutations(string) {
       return num.toString(2)
   }
 
-  //console.log(convert(25))
+  let myNum = 25
+  console.log(convert(myNum))
