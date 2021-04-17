@@ -176,3 +176,6 @@ let maze = [
     [' ', '*', '*', '*', '*', '*', ' '],
     [' ', ' ', ' ', ' ', ' ', ' ', 'e']
 ]
+
+
+'10. Anagrams - all permutations of a string' 
