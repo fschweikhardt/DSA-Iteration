@@ -10,7 +10,7 @@ function countingSheep(num) {
     return console.log('All the sheep jumped over the fence')
 }
 
-//countingSheep(3)
+countingSheep(3)
 
 
 '2. Power Calculator'
@@ -232,4 +232,4 @@ function getAllPermutations(string) {
       return num.toString(2)
   }
 
-  console.log(convert(25))
+  //console.log(convert(25))
