@@ -193,13 +193,12 @@ function permut(string) {
     if (string.length < 2) return string 
   
     let permutations = []
-
     for (let i = 0; i < string.length; i++) {
       let remainingString = string.slice(0, i) + string.slice(i + 1, string.length)
+      console.log(remainingString, i)
       for (let subPermutation of permut(remainingString))
         permutations.push(string[i] + subPermutation)
     }
-
     return permutations;
   }
 
