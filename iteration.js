@@ -10,7 +10,7 @@ function countingSheep(num) {
     return console.log('All the sheep jumped over the fence')
 }
 
-countingSheep(3)
+//countingSheep(3)
 
 
 '2. Power Calculator'
@@ -190,7 +190,7 @@ function anagram(string) {
 }
 
 function permut(string) {
-    if (string.length < 2) return string // This is our break condition
+    if (string.length < 2) return string 
   
     let permutations = []
 
@@ -203,25 +203,25 @@ function permut(string) {
     return permutations;
   }
 
-  //console.log(permut('abc'))
+  console.log(permut('aba'))
 
 
-function getAllPermutations(string) {
-    if (string.length <= 1) return string
+// function getAllPermutations(string) {
+//     if (string.length <= 1) return string
 
-    let results = []
+//     let results = []
 
-    for (let i = 0; i < string.length; i++) {
-      let charsLeft = string.slice(0, i) + string.slice(i + 1);
-      let innerPermutations = getAllPermutations(charsLeft)
-      for (let j = 0; j < innerPermutations.length; j++) {
-        results.push(string[i] + innerPermutations[j])
-      }
-    }
-    return results
-  }
+//     for (let i = 0; i < string.length; i++) {
+//       let charsLeft = string.slice(0, i) + string.slice(i + 1);
+//       let innerPermutations = getAllPermutations(charsLeft)
+//       for (let j = 0; j < innerPermutations.length; j++) {
+//         results.push(string[i] + innerPermutations[j])
+//       }
+//     }
+//     return results
+//   }
 
-  //console.log(getAllPermutations('abc'))
+//   console.log(getAllPermutations('aba'))
 
 
   '12. Binary Representation'
@@ -233,4 +233,4 @@ function getAllPermutations(string) {
   }
 
   let myNum = 25
-  console.log(convert(myNum))
+  //console.log(convert(myNum))
